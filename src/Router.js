@@ -37,7 +37,7 @@ function Router() {
         />
         <Route path="/kakaologin" element={<LoginKakao />} />
         <Route path="/loginpage" element={<LoginPage />} />
-        <Route path="signuppage" element={<LoginSignUp />} />
+        <Route path="/signuppage" element={<LoginSignUp />} />
         <Route path="/formlist" element={<FormList />} />
         <Route path="/reserveform" element={<ReserveForm />} />
         <Route path="/formdetail/:formId" element={<FormDetail />} />
