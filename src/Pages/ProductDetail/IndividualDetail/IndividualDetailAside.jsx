@@ -9,8 +9,15 @@ const IndividualDetailAside = ({ individualData }) => {
   const { price, description, is_active, product_name, category } =
     individualData;
   const goReserveForm = () => {
+    if (category === "cake") {
+      alert(
+        "현재 매장 상황에 따라 케이크는 판매하고 있지 않습니다. 양해 부탁드립니다."
+      );
+      return;
+    }
     if (is_active === false) {
       alert("현재 판매중인 케이크가 아닙니다.");
+      return;
     } else {
       if (USER_TOKEN) {
         navigate("/reserveform", { state: { formType: "cake" } });
