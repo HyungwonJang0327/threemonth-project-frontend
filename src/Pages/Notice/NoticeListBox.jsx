@@ -93,7 +93,7 @@ const MenuDate = styled(MenuNum)``;
 const NoticeList = styled.ul`
   width: 100%;
   min-height: 100px;
-  border-radius: 20px; ;
+  border-radius: 20px;
 `;
 
 const NoticeListContents = styled.div`
