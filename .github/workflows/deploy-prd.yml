@@ -41,7 +41,7 @@ jobs:
       - name: Build Page
         uses: borales/actions-yarn@v4
         with: 
-          cmd: build:dev
+          cmd: build
         env: 
           CI: ''
           
