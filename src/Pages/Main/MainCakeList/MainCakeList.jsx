@@ -23,7 +23,8 @@ const MainCakeList = ({ mainCakeList }) => {
               >
                 {item.product_images.map(
                   (x, index) =>
-                    x.property === "main" && x.img_url && (
+                    x.property === "main" &&
+                    x.img_url && (
                       <CakeItem key={index} src={x.img_url} alt="image" />
                     )
                 )}
