@@ -1,5 +1,11 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter,
+  Route,
+  Routes,
+  createBrowserRouter,
+  redirect,
+} from "react-router-dom";
 import Nav from "./components/Nav";
 import Main from "./Pages/Main/Main";
 import PackageDetail from "./Pages/ProductDetail/PackageDetail/PackageDetail";
@@ -58,5 +64,16 @@ function Router() {
     </BrowserRouter>
   );
 }
+
+export const renewRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <></>,
+    loader: () => {
+      return redirect("https://smartstore.naver.com/threemonth");
+    },
+    children: [],
+  },
+]);
 
 export default Router;
